@@ -1,0 +1,18 @@
+h1 {
+  margin: 2% 0 2% 0;
+}
+
+thead > tr > th{
+  color: var(--sdos-main-color);
+}
+
+.icon:hover {
+  cursor: pointer;
+  color: var(--sdos-main-color);
+}
+
+tbody tr:hover > td.icon~td  {
+  color: white;
+  background-color: var(--sdos-main-color);
+  cursor: pointer;
+}

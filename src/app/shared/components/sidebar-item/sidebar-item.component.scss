@@ -1,0 +1,13 @@
+.card {
+  border: 0px;
+  border-left: 5px solid var(--sdos-main-color);
+  border-radius: 0;
+
+  .card-body {
+    color: var(--sdos-main-color);
+
+    .title{
+      margin-left: 5%
+    }
+  }
+}

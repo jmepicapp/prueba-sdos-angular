@@ -1,0 +1,19 @@
+<h2 class="accordion-header">
+  <button class="accordion-button" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#album' + album.id">
+    Álbum {{ index +1 }}: {{ album.title | titlecase }}
+  </button>
+</h2>
+<div [id]="'album'+ album.id" class="accordion-collapse collapse">
+  <div class="accordion-body">
+    <div class="row">
+      <div class="col-2" *ngFor="let photo of album.photos">
+        <div class="card my-2">
+          <img class="card-img-top" [src]="photo.url">
+          <div class="card-body">
+            <span class="card-title">{{ photo.title | titlecase }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

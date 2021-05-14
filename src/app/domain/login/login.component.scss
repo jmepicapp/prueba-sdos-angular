@@ -1,0 +1,19 @@
+.login {
+  padding: 0 5% 0px 5% !important;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .logo {
+    width: 30%;
+  }
+
+}
+
+.hello-world {
+  height: 100vh;
+  background-image: url('../../../assets/images/login-carousel.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

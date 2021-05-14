@@ -1,0 +1,20 @@
+<h2 class="accordion-header">
+  <button class="accordion-button" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#post' + post.id">
+    Post {{ index + 1 }}: {{ post.title | titlecase }}
+  </button>
+</h2>
+<div [id]="'post' + post.id" class="accordion-collapse collapse">
+  <div class="accordion-body">
+    <div class="row" *ngFor="let comment of post.comments">
+      <div class="card my-2">
+        <div class="card-body">
+          <h6 class="text-end">Comentario de {{ comment.email }}</h6>
+          <p class="card-title">
+            <strong>{{ comment.name | titlecase }}</strong>
+          </p>
+          <p class="card-text"> {{ comment.body }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

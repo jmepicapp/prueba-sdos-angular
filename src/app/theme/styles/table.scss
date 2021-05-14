@@ -1,0 +1,18 @@
+@import '../variables.scss';
+
+.table {
+  --bs-table-striped-color: var(--text-color);
+  --bs-table-striped-bg: rgb(37, 150, 190, 0.05);
+  --bs-table-active-color: var(--text-color);
+  --bs-table-active-bg: rgb(37, 150, 190, 0.1);
+  --bs-table-hover-color: var(--text-color);
+  --bs-table-hover-bg: rgb(37, 150, 190, 0.075);
+
+  fa-icon.icon:hover {
+    cursor: pointer;
+    color: var(--sdos-main-color)
+  }
+
+}
+
+

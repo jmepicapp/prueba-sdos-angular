@@ -1,0 +1,35 @@
+.bg-dark {
+  background-color: var(--text-color) !important;
+
+  .logo{
+    background-color: white;
+
+    img{
+      width: 25%;
+      margin: 5% 0 5% 7%;
+    }
+  }
+
+  .nav-link {
+    color: white;
+  }
+
+  .icon {
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.navbar {
+  display: block;
+  padding: 0px;
+}
+
+
+
+
+
+
+
+
+

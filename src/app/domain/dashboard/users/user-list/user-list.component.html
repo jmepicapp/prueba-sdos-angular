@@ -1,0 +1,21 @@
+<h1>Listado de usuarios</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>USUARIO</th>
+      <th>NOMBRE Y APELLIDOS</th>
+      <th>EMAIL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users" (click)="goToUserDetail(user)">
+      <td class="icon">
+        <fa-icon [icon]="faEye"></fa-icon>
+      </td>
+      <td>{{ user.username }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.email  | lowercase}}</td>
+    </tr>
+  </tbody>
+</table>
